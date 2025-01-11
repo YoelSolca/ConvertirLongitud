@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: convertir-longitud-service
+spec:
+  selector:
+    app: convertir-longitud
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5024
+      nodePort: 30001
+  type: NodePort

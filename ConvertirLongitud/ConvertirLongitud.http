@@ -1,0 +1,6 @@
+@ConvertirLongitud_HostAddress = http://localhost:5009
+
+GET {{ConvertirLongitud_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

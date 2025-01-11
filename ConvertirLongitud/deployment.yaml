@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: convertir-longitud-deployment
+  labels:
+    app: convertir-longitud
+spec:
+  replicas: 3 
+  selector:
+    matchLabels:
+      app: convertir-longitud
+  template:
+    metadata:
+      labels:
+        app: convertir-longitud
+    spec:
+      containers:
+      - name: convertir-longitud-container
+        image: conversionlongitudapi:latest
+        imagePullPolicy: Never 
+        ports:
+        - containerPort: 5024
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "1Gi"
+            cpu: "1"

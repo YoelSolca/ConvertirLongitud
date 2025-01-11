@@ -1,0 +1,36 @@
+# Excluir archivos de construcción y resultados
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+x64/
+x86/
+bld/
+bin/
+obj/
+out/
+log/
+logs/
+
+# Excluir configuraciones de Visual Studio y herramientas
+.vs/
+.idea/
+.vscode/
+
+# Excluir archivos de pruebas
+test/
+tests/
+
+# Excluir paquetes NuGet y dependencias locales
+**/[Pp]ackages/*
+
+# Excluir archivos temporales y de caché
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Otros archivos innecesarios
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
